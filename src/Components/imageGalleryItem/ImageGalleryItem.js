@@ -4,9 +4,7 @@ import style from "./ImageGalleryItem.module.css";
 
 const ImageGalleryItem = ({ image, onClick }) => {
   const { id, webformatURL, largeImageURL, tags } = image;
-  const largeImg = () => {
-    onClick(largeImageURL);
-  };
+  const largeImg = () => onClick(largeImageURL);
   return (
     <>
       <li className={style.ImageGalleryItem}>

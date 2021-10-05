@@ -9,4 +9,3 @@ export const getImages = async (name, page) => {
   );
   return res.data.hits;
 };
-// console.log(getImages());
