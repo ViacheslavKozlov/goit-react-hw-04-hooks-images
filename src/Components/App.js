@@ -55,10 +55,8 @@ export default function App() {
   };
 
   const toggleModal = imageURL => {
-    this.setState(({ showModal }) => ({
-      setShowModal: !showModal,
-      setSelectedImage: imageURL
-    }));
+    setShowModal(!showModal);
+    setSelectedImage(imageURL);
   };
 
   return (
